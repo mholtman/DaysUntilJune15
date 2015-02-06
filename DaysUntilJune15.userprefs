@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="DaysUntilJune15/DaysUntilJune15.iOS/DaysUntilJune15.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DaysUntilJune15/DaysUntilJune15/MainContentPage.xaml">
+    <Files>
+      <File FileName="DaysUntilJune15/DaysUntilJune15/packages.config" Line="1" Column="1" />
+      <File FileName="DaysUntilJune15/DaysUntilJune15.Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="DaysUntilJune15/DaysUntilJune15.iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="DaysUntilJune15/DaysUntilJune15/MainContentPage.xaml" Line="23" Column="23" />
+      <File FileName="DaysUntilJune15/DaysUntilJune15/obj/Debug/MainContentPage.xaml.g.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
