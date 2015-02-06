@@ -1,19 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DaysUntilJune15.MainContentPage">
-	<StackLayout>
+             x:Class="DaysUntilJune15.MainContentPage"
+			 BackgroundImage="SplashScreenImage.jpg">
 		<StackLayout VerticalOptions="CenterAndExpand">
 			<Label Text="{Binding MainText}"
-				   FontSize="24"
+				   FontSize="32"
 				   XAlign="Center"
 				   HorizontalOptions="CenterAndExpand" />
 			<Label Text="{Binding CountDown}"
 				   XAlign="Center"
+				   FontSize="42"
 				   HorizontalOptions="CenterAndExpand" />
 		</StackLayout>
-		<StackLayout VerticalOptions="EndAndExpand">
-			<Button Text="{Binding ButtonText}" Command="{Binding RandomGifCommand}"></Button>
-		</StackLayout>
-	</StackLayout>
 </ContentPage>
