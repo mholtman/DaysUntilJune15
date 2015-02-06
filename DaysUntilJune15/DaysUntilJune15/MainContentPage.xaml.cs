@@ -8,6 +8,6 @@ namespace DaysUntilJune15
 		{
 			InitializeComponent();
 			this.BindingContext = new MainContentPageViewModel();
-		}
+        }
 	}
 }
