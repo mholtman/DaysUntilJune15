@@ -29,11 +29,10 @@ namespace DaysUntilJune15
 		{
 			var timeSpan = (endOfContestDate - currentDate);
 
-			if (contestIsExpired(timeSpan)) {
-				return "Contest is over! Blast off!";
-			}
+			return contestIsExpired (timeSpan) 
+				? "Contest is over! Blast off!" 
+				: string.Format ("{0} days, {1} hours, {2} minutes, {3} seconds", timeSpan.Days, timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
 
-			return string.Format("{0} days, {1} hours, {2} minutes, {3} seconds", timeSpan.Days, timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
 		}
 
 		private bool contestIsExpired(TimeSpan timeSpan)
