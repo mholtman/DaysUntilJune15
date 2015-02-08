@@ -25,5 +25,11 @@ namespace DaysUntilJune15
 //				CountDown = string.Format("{0} days, {1} hours, {2} minutes, {3} seconds", timeSpan.Days, timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
 //			});
 		}
+
+		public string ComposeCountdownString(DateTime endOfContestDate, DateTime currentDate)
+		{
+			return "Contest is over! Blast off!";
+
+		}
 	}
 }
