@@ -34,7 +34,7 @@ namespace DaysUntilJune15
 				return "Contest is over! Blast off!";
 			}
 
-			return "1 days, 0 hours, 0 minutes, 0 seconds";
+			return string.Format("{0} days, {1} hours, {2} minutes, {3} seconds", timeSpan.Days, timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
 		}
 	}
 }

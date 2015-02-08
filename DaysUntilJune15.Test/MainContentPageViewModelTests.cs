@@ -29,11 +29,20 @@ namespace DaysUntilJune15.Test
 		}
 
 		[Test ()]
+		public void GivenCurrentDateWithVariableMonthDayHourMinuteWhenCurrentDateLessThanEndDateThenCountdownStringIsCorrect ()
+		{
+			var model = new MainContentPageViewModel ();
+			Assert.AreEqual ("2 days, 3 hours, 4 minutes, 5 seconds", model.ComposeCountdownString (new DateTime (2015, 6, 15), new DateTime (2015, 6, 12, 20, 55, 55)));
+		}
+
+		[Test ()]
 		public void WhenCurrentDateGreaterThanEndDateThenContestOverTextIsDisplayed()
 		{
 			var model = new MainContentPageViewModel ();
 			Assert.AreEqual ("Contest is over! Blast off!", model.ComposeCountdownString (new DateTime (2015, 6, 15), new DateTime (2015, 6, 16)));
 		}
+
+
 	}
 }
 
