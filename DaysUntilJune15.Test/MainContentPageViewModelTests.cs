@@ -39,7 +39,7 @@ namespace DaysUntilJune15.Test
 		public void WhenCurrentDateGreaterThanEndDateThenContestOverTextIsDisplayed()
 		{
 			var model = new MainContentPageViewModel ();
-			Assert.AreEqual ("Contest is over! Blast off!", model.ComposeCountdownString (new DateTime (2015, 6, 15), new DateTime (2015, 6, 16)));
+			Assert.AreEqual ("Contest is over! Blast off!", model.ComposeCountdownString (new DateTime (2015, 6, 15), new DateTime (2015, 6, 16, 1, 1, 1)));
 		}
 
 		[Test ()]

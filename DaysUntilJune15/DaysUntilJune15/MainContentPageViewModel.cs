@@ -29,7 +29,7 @@ namespace DaysUntilJune15
 		{
 			var timeSpan = (endOfContestDate - currentDate);
 
-			if (timeSpan.Days <= 0 && timeSpan.Hours <= 0 && timeSpan.Minutes <= 0 && timeSpan.Seconds <= 0) {
+			if (timeSpan.Days <= 0 && timeSpan.Hours <= 0 && timeSpan.Minutes <= 0 && timeSpan.Seconds == 0) {
 				return "Contest is over! Blast off!";
 			}
 
