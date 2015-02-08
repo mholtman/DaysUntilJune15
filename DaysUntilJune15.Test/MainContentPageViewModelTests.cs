@@ -42,6 +42,17 @@ namespace DaysUntilJune15.Test
 			Assert.AreEqual ("Contest is over! Blast off!", model.ComposeCountdownString (new DateTime (2015, 6, 15), new DateTime (2015, 6, 16)));
 		}
 
+		[Test ()]
+		public void GivenEqualDateTimesWithIrrelevantPiecesWhenCurrentDateEqualsEndDateThenContestOverStringIsDisplayed ()
+		{
+			var model = new MainContentPageViewModel ();
+			var endDateWithSecondsAccuracy = new DateTime (2015, 6, 15, 0, 0, 0);
+			var currentDateWithMillisecondAccuracy = new DateTime (2015, 6, 15, 0, 0, 0);
+			currentDateWithMillisecondAccuracy.AddMilliseconds (200);
+
+			Assert.AreEqual ("Contest is over! Blast off!", model.ComposeCountdownString (endDateWithSecondsAccuracy, currentDateWithMillisecondAccuracy));
+		}
+
 
 	}
 }
