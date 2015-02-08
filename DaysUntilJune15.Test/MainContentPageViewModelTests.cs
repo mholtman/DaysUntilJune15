@@ -52,8 +52,6 @@ namespace DaysUntilJune15.Test
 
 			Assert.AreEqual ("Contest is over! Blast off!", model.ComposeCountdownString (endDateWithSecondsAccuracy, currentDateWithMillisecondAccuracy));
 		}
-
-
 	}
 }
 
