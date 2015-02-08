@@ -15,10 +15,17 @@ namespace DaysUntilJune15.Test
 		}
 
 		[Test ()]
-		public void WhenCurrentDateMatchesEndDateThenContestOverTextAppears ()
+		public void WhenCurrentDateMatchesEndDateThenContestOverTextIsComposed ()
 		{
 			var model = new MainContentPageViewModel ();
-			Assert.AreEqual ("Contest is over! Blast off!", model.ComposeCountdownString(new DateTime(2015,6,15), new DateTime(2015, 6,15)));
+			Assert.AreEqual ("Contest is over! Blast off!", model.ComposeCountdownString (new DateTime (2015, 6, 15), new DateTime (2015, 6, 15)));
+		}
+
+		[Test ()]
+		public void WhenCurrentDateLessThanEndDateThenCoutdownStringIsComposed ()
+		{
+			var model = new MainContentPageViewModel ();
+			Assert.AreEqual ("1 days, 0 hours, 0 minutes, 0 seconds", model.ComposeCountdownString (new DateTime (2015, 6, 15), new DateTime (2015, 6, 14)));
 		}
 	}
 }
